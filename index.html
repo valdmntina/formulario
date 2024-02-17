@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+
+<body>
+  <section>
+    <h1>Validaciones JS</h1>
+    <p>los campos se validaran de la siguiente manera</p>
+      <div>
+        <p><span>Ficha:</span> se puede ingresar cualquier caracter</p>
+      </div>
+      <div>
+        <p><span>Nombre:</span>solo se puede ingresar letras</p>
+      </div>
+      <div>
+        <p><span>Apellido:</span> solo se puede ingresar letras</p>
+      </div>
+      <div>
+        <p><span>Correo:</span> solo se puede ingresar un correo valido</p>
+      </div>
+      <div>
+        <p><span>Télefono:</span> solo se puede ingresar numeros</p>
+      </div>
+      <div>
+        <p><span>Genero:</span> solo se puede seleccionar un genero</p>
+      </div>
+      <div>
+        <p><span>Ciudad:</span> solo se puede seleccionar una ciudad</p>
+      </div>
+      <div>
+        <p><span>Habilidades:</span> se tiene que seleccionar como minimo tres habilidades</p>
+      </div>
+  </section>
+  <section>
+    <div>
+      <form action="" autocomplete="on"> <!--autocomplete: se auto completa el fomulario con lo previamente enviado -->
+      <div>
+        <label for="ficha">Número de ficha</label>
+        <input type="text" name="ficha" id="ficha" required>
+      </div>
+      <div>
+        <!--nombre con validacion-->
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" pattern="[a-zA-Z]+" required>
+      </div>
+      <div>
+        <!--apellido con validacion-->
+        <label for="Apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" pattern="[a-zA-Z]+" required>
+      </div>
+      <div>
+        <label for="correo">Correo</label>
+        <input type="email" name="correo" id="correo" required>
+      </div>
+      <div>
+        <!--telefono con validacion maximo 10 numeros-->
+        <label for="télefono">Télefono</label>
+        <input type="tel" name="télefono" id="télefono" pattern="[0-9]{10}" maxlength="10" required>
+      </div>
+    </div>
+
+    <div>
+      <input type="radio" name="genero" id="hombre" value="hombre" required>
+      <label for="radio">Hombre</label>
+      <input type="radio" name="genero" id="mujer" value="mujer">
+      <label for="radio">Mujer</label>
+      <input type="radio" name="genero" id="otro" value="otro".>
+      <label for="otro">Otro</label>
+    </div>
+
+    <div>
+      <label for="ciudad">Ciudad</label>
+      <select name="ciudad" id="ciudad" required>
+        <option value="bogotá">Bogotá</option>
+        <option value="medellin">Medellin</option>
+        <option value="bucaramanga">Bucaramanga</option>
+        <option value="barranquilla">Barranquilla</option>
+        <option value="otra">Otra</option>
+      </select>
+    </div>
+
+    <div>
+      <p>Seleccione minimo tres habilidades</p>
+      <div>
+        <input type="checkbox" name="habilidades" id="html" value="html">
+        <label for="checkbox">HTML</label>
+      </div>
+      <div>
+        <input type="checkbox" name="habilidades" id="css" value="css">
+        <label for="checkbox">CSS</label>
+      </div>
+      <div>
+        <input type="checkbox" name="habilidades" id="javascript" value="javascript">
+        <label for="checkbox">JavaScript</label>
+      </div>
+      <div>
+        <input type="checkbox" name="habilidades" id="php" value="php">
+        <label for="checkbox">PHP</label>
+      </div>
+      <div>
+        <input type="checkbox" name="habilidades" id="java" value="java">
+        <label for="checkbox">JAVA</label>
+      </div>
+      <div>
+        <input type="checkbox" name="habilidades" id="sql" value="sql">
+        <label for="checkbox">SQL</label>
+      </div>
+      <div>
+        <input type="checkbox" name="habilidades" id="uml" value="uml">
+        <label for="checkbox">UML</label>
+      </div>
+    </div>
+
+    <div>
+      <button type="submit">Enviar</button>
+    </div>
+    </form>
+  </section>
+
+</body>
+
+</html>
