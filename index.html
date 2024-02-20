@@ -46,31 +46,31 @@
       <div class="card">
         <form action="form" autocomplete="on">
           <!--autocomplete: se auto completa el fomulario con lo previamente enviado -->
-          <div>
+          <div class="control">
             <label for="ficha">Número de ficha</label>
             <input type="text" name="ficha" id="ficha" required>
           </div>
-          <div>
+          <div class="control">
             <!--nombre con validacion-->
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" id="nombre" pattern="[a-zA-Z]+" required>
           </div>
-          <div>
+          <div class="control">
             <!--apellido con validacion-->
             <label for="Apellido">Apellido</label>
             <input type="text" name="apellido" id="apellido" pattern="[a-zA-Z]+" required>
           </div>
-          <div>
+          <div class="control">
             <label for="correo">Correo</label>
             <input type="email" name="correo" id="correo" required>
           </div>
-          <div>
+          <div class="control">
             <!--telefono con validacion maximo 10 numeros-->
             <label for="télefono">Télefono</label>
             <input type="tel" name="télefono" id="télefono" pattern="[0-9]{10}" maxlength="10" required>
           </div>
 
-          <div>
+          <div class="control control--row">
             <input type="radio" name="genero" id="hombre" value="hombre" required>
             <label for="radio">Hombre</label>
             <input type="radio" name="genero" id="mujer" value="mujer">
@@ -79,18 +79,18 @@
             <label for="otro">Otro</label>
           </div>
 
-          <div>
+          <div class="control">
             <label for="ciudad">Ciudad</label>
             <select name="ciudad" id="ciudad" required>
-              <option value="bogotá">Bogotá</option>
+              <option value="otra">Seleccione una ciudad</option>
               <option value="medellin">Medellin</option>
               <option value="bucaramanga">Bucaramanga</option>
               <option value="barranquilla">Barranquilla</option>
-              <option value="otra">Seleccione una ciudad</option>
+              <option value="bogotá">Bogotá</option>
             </select>
           </div>
 
-          <div>
+          <div class="control">
             <p>Seleccione minimo tres habilidades</p>
             <div>
               <input type="checkbox" name="habilidades" id="html" value="html">
@@ -122,8 +122,8 @@
             </div>
           </div>
 
-          <div>
-            <button type="submit">Enviar</button>
+          <div class="d-flex d-center padding-top-8">
+            <button type="submit" class="boton boton--gris">Enviar</button>
           </div>
         </form>
       </div>

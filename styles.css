@@ -45,3 +45,45 @@ body{
 .card__title{
   text-align: center;
 }
+
+.control{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 4px;
+}
+
+
+.control--row{
+  flex-direction: row;
+}
+
+.boton{
+  display: flex;
+  padding: 12px;
+  color: #f1f1f1;
+  border: none;
+  border-radius: 4px;
+}
+
+.boton:hover{
+  background-color: black;
+  color: #f1f1f1;
+}
+
+.boton--gris{
+  color: #888282;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.d-center{
+  justify-content: center;
+  align-items: center;
+}
+
+.padding-top-8{
+  padding-top: 8px;
+}
